@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col text-muted pt-2 pb-1">CREATE #</div>
+  <div class="col"><span class="pull-right text-muted pt-2 pb-1">LAST SCANNED #</span></div>
+</div>
+<div class="row">
+  <div class="col">P1-C-0-902</div>
+  <div class="col">
+    <span class="pull-right">B11511922</span>
+  </div>
+</div>
+<div class="row pt-2" ng-controller="productController">
+  <div class="col">
+    <input type="text" name="binProduct" id="binProduct" ng-model="binProduct" ng-keyup="completeBin(binProduct)" class="form-control" />  
+    <ul class="list-group position-absolute z-index" ng-model="hideBin" ng-hide="hideBin">  
+      <li class="list-group-item" ng-repeat="binData in filterBin" ng-click="fillBinBox(binData)">{{binData}}</li>  
+    </ul>
+  </div>
+  <div class="col">
+    <input type="text" name="barcodeProduct" id="barcodeProduct" ng-model="barcodeProduct" ng-keyup="completeBarcode(barcodeProduct)" class="form-control" />  
+    <ul class="list-group position-absolute z-index" ng-model="hideBarcode" ng-hide="hideBarcode">
+      <li class="list-group-item" ng-repeat="barcodeData in filterBarcode" ng-click="fillBarcodeBox(barcodeData)">{{barcodeData}}</li>  
+    </ul>
+  </div>
+</div>
+
+<div class="card-deck mt-5">
+  <div class="card shadow-lg rounded">
+    <div class="row px-2">
+      <h4 class="col text-muted pt-2">P1-C-0-902</h4>
+      <h4 class="col"><span class="pull-right text-muted pt-2">B11511922</span></h4>
+    </div>
+    <div class="row px-2 text-muted">
+      <div class="col">BIN</div>
+      <div class="col">
+        <span class="pull-right">SKU Barcode</span>
+      </div>
+    </div>
+    <div class="row px-5 py-3">
+      <div class="col text-right mr-3">
+        <div class="font-weight-bold h2 pr-3">0</div>
+        <div class="text-muted h5">Picked</div>
+      </div>
+      <span class="border-right my-2"></span>
+      <div class="col text-left ml-3">
+        <div class="text-muted h2 pl-2">4</div>
+        <div class="text-muted h5">QTY</div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-light btn-lg btn-block text-muted">
+      Not Found
+    </button>
+  </div>
+</div>
+<!-- <div ng-controller="EmpController">
+  <input type="text" name="product" id="product" ng-model="product" ng-keyup="complete(product)" class="form-control" />  
+   <ul class="list-group" ng-model="hidethis" ng-hide="hidethis">  
+      <li class="list-group-item" ng-repeat="countrydata in filterCountry" ng-click="fillTextbox(countrydata)">{{countrydata}}</li>  
+   </ul>
+  </div> -->

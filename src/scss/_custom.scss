@@ -1,0 +1,50 @@
+// Here you can add other styles
+
+.bg-pick {
+    background-color: #b4ceec;
+  }
+  .bg-list {
+    background-color: #d0e2f6;
+  }
+  .bg-pick-card {
+    background-color: #ededed;
+  }
+  .bg-not-found-card {
+    background-color: #f6b54b;
+  }
+  .bg-done-card {
+    background-color: #60d8b6;
+  }
+  .f10 {
+    font-size: 10px;
+  }
+  .modal-hgt {
+    height: 390px;
+    overflow: auto;
+  }
+  .z-index {
+  	z-index: 1;
+  }
+
+/***** Shadow classes *****/
+.shadow1{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.shadow2{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.shadow3{
+  box-shadow: 0 3px 3px #aaa;
+  -webkit-box-shadow: 0 3px 3px #aaa;
+}
+.shadow4{
+  box-shadow: 0px 6px 14.24px 1.76px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0px 6px 14.24px 1.76px rgba(0, 0, 0, 0.08);
+}
+.shadow5{
+  box-shadow: 0px 1px 1.96px 0.04px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 1px 1.96px 0.04px rgba(0, 0, 0, 0.12);
+}
+/***** END Shadow classes *****/
